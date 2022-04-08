@@ -1,12 +1,24 @@
 .App {
   text-align: center;
 }
+body {
+  background-color: #263859;
+}
+h1, h4{
+  color: white;
+}
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
-
+.location-search-input {
+  height: 35px;
+  width: 30%;
+  border-radius: 2px;
+  border:none;
+  padding: 5px 10px;
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
