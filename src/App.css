@@ -3,6 +3,8 @@
 }
 body {
   background-color: #263859;
+
+  font-family: sans-serif;
 }
 h1, h4{
   color: white;
@@ -12,12 +14,51 @@ h1, h4{
   height: 40vmin;
   pointer-events: none;
 }
-.location-search-input {
-  height: 35px;
+
+input {
+  border: 1px solid #999;
+  padding: 0.5rem;
+  width: 300px;
+}
+.no-suggestions {
+  color: #999;
+  padding: 0.5rem;
+}
+li {
+  list-style: none;
+  color: azure;
+  margin-top: 8px;
+  cursor: pointer;
+}
+li:hover {
+  background-color: #263859;
+}
+.suggestions {
+  border: 1px solid #999;
+  border-top-width: 0;
+  list-style: none !important;
+  margin-top: 0;
+  max-height: 143px;
+  overflow-y: auto;
+  padding-left: 0;
+  cursor: pointer;
+  width: calc(300px + 1rem);
+}
+.suggestions li {
+  padding: 0.5rem;
+}
+.suggestion-active,
+.suggestions li:hover {
+  cursor: pointer;
+  font-weight: 700;
+  height: 44px;
   width: 30%;
   border-radius: 2px;
   border:none;
   padding: 5px 10px;
+}
+.suggestions li:not(:last-of-type) {
+  border-bottom: 1px solid #999;
 }
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
