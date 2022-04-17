@@ -60,6 +60,10 @@ li:hover {
 .suggestions li:not(:last-of-type) {
   border-bottom: 1px solid #999;
 }
+.suggestion-array {
+  height: 20px;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;

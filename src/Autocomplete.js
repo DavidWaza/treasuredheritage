@@ -53,6 +53,7 @@ const SuggestionsListComponent = () => {
   return (
     <div className="App">
       <>
+      <div>
         <input
           type="text"
           className="suggestion-active"
@@ -60,7 +61,17 @@ const SuggestionsListComponent = () => {
           value={input}
           onChange={onChange}
         />
-        {showSuggestions && input && <SuggestionsListComponent />}
+        {showSuggestions && input && <SuggestionsListComponent  />}
+        </div>
+        <div style={{marginTop:20}}>
+        <input
+          type="text"
+          className="suggestion-array"
+          placeholder="state"
+          // value={input}
+          // onChange={onChange}
+        />
+        </div>
       </>
     </div>
   );
