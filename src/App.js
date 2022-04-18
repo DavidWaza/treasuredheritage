@@ -7,8 +7,7 @@ let url = new URL("https://maps.googleapis.com/maps/api/js?key=AIzaSyBS0jDQGP-Gw
 function App() {
   const [data, setData] = useState([])
 
-
-    useEffect(()=> {
+  useEffect(()=> {
       axios.get(url).then((res) => {
         setData(res.data.description)
       })

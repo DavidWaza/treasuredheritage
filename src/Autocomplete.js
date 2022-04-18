@@ -72,6 +72,24 @@ const SuggestionsListComponent = () => {
           // onChange={onChange}
         />
         </div>
+        <div style={{marginTop:20}}>
+        <input
+          type="text"
+          className="suggestion-array"
+          placeholder="country"
+          // value={input}
+          // onChange={onChange}
+        />
+        </div>
+        <div style={{marginTop:20}}>
+        <input
+          type="text"
+          className="suggestion-array"
+          placeholder="zipcode"
+          // value={input}
+          // onChange={onChange}
+        />
+        </div>
       </>
     </div>
   );
