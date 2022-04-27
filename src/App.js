@@ -3,16 +3,8 @@ import axios from "axios";
 import Autocomplete from "./Autocomplete";
 import { useState, useEffect } from "react";
 
-let url = new URL("https://maps.googleapis.com/maps/api/js?key=AIzaSyBS0jDQGP-Gw3c32AS0487MevOQIB7gqkk&libraries=places&callback=initMap&solution_channel=GMP_QB_addressselection_v1_cABC") 
 function App() {
   const [data, setData] = useState([])
-
-  useEffect(()=> {
-      axios.get(url).then((res) => {
-        setData(res.data.description)
-      })
-    }, [])
-    if(!data) return null;
 
 
 
