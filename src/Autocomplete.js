@@ -1,8 +1,11 @@
 import { useEffect, useState } from "react";
-import PlacesAutocomplete, { getLatLng, geocodeByAddress } from "react-places-autocomplete"
+import PlacesAutocomplete, {
+  getLatLng,
+  geocodeByAddress,
+} from "react-places-autocomplete";
 import "./App.css";
 
-const Autocomplete = ({ suggestions }) => {
+const Autocomplete = ({suggestions}) => {
   const [address, setAddress] = useState("");
   const [addressState, setAddressState] = useState("");
   const [addressZipCode, setAddressZipCode] = useState("");
@@ -10,39 +13,46 @@ const Autocomplete = ({ suggestions }) => {
 
   useEffect(() => {
     const script = document.createElement("script");
-    script.src = "https://maps.googleapis.com/maps/api/js?key=AIzaSyCBPWNDBhZJT6lpAEBNxB1z4VQE74ato8A&libraries=places&solution_channel=GMP_QB_addressselection_v1_cABC"
-    script.async = true
+    script.src =
+      "https://maps.googleapis.com/maps/api/js?key=AIzaSyCBPWNDBhZJT6lpAEBNxB1z4VQE74ato8A&libraries=places&solution_channel=GMP_QB_addressselection_v1_cABC";
+    script.async = true;
     document.body.appendChild(script);
-  })
+  });
 
   const handleSelect = async (address) => {
     try {
       const results = await geocodeByAddress(address);
       const latLng = await getLatLng(results[0]);
-      console.log(results[0])
-      console.log(latLng)
+      console.log(results[0]);
+      console.log(latLng);
 
-      const hasPostalCode = results[0].address_components.find(component => component.types.includes("postal_code"))
-      const hasCountry = results[0].address_components.find(component => component.types.includes("country"))
-      const hasState = results[0].address_components.find(component => component.types.includes("administrative_area_level_1"))
+      const hasPostalCode = results[0].address_components.find((component) =>
+        component.types.includes("postal_code")
+      );
+      const hasCountry = results[0].address_components.find((component) =>
+        component.types.includes("country")
+      );
+      const hasState = results[0].address_components.find((component) =>
+        component.types.includes("administrative_area_level_1")
+      );
 
       if (hasPostalCode !== undefined) {
-        setAddressZipCode(hasPostalCode.long_name)
+        setAddressZipCode(hasPostalCode.long_name);
       }
 
       if (hasCountry !== undefined) {
-        setAddressCountry(hasCountry.long_name)
+        setAddressCountry(hasCountry.long_name);
       }
 
       if (hasState !== undefined) {
-        setAddressState(hasState.long_name)
+        setAddressState(hasState.long_name);
       }
     } catch (e) {
-      console.log(e)
+      console.log(e);
     }
-  }
+  };
 
-  const handleChange = address => setAddress(address);
+  const handleChange = (address) => setAddress(address);
 
   return (
     <div className="App">
@@ -59,7 +69,12 @@ const Autocomplete = ({ suggestions }) => {
             onChange={handleChange}
             onSelect={handleSelect}
           >
-            {({ getInputProps, suggestions, getSuggestionItemProps, loading }) => (
+            {({
+              getInputProps,
+              suggestions,
+              getSuggestionItemProps,
+              loading,
+            }) => (
               <div>
                 <input
                   {...getInputProps({
@@ -69,15 +84,15 @@ const Autocomplete = ({ suggestions }) => {
                 />
                 <div className="autocomplete-dropdown-container">
                   {loading && <div>Loading...</div>}
-                  {suggestions.map(suggestion => {
+                  {suggestions.map((suggestion) => {
                     const className = suggestion.active
-                      ? 'suggestion-item--active'
-                      : 'suggestion-item';
+                      ? "suggestion-item--active"
+                      : "suggestion-item";
 
                     // inline style for demonstration purpose
                     const style = suggestion.active
-                      ? { backgroundColor: '#fafafa', cursor: 'pointer' }
-                      : { backgroundColor: '#ffffff', cursor: 'pointer' };
+                      ? { backgroundColor: "#fafafa", cursor: "pointer" }
+                      : { backgroundColor: "#ffffff", cursor: "pointer" };
                     return (
                       <div
                         {...getSuggestionItemProps(suggestion, {
@@ -101,7 +116,6 @@ const Autocomplete = ({ suggestions }) => {
             placeholder="state"
             readOnly={true}
             value={addressState}
-          // onChange={onChange}
           />
         </div>
         <div style={{ marginTop: 20 }}>
@@ -111,7 +125,6 @@ const Autocomplete = ({ suggestions }) => {
             placeholder="country"
             readOnly={true}
             value={addressCountry}
-          // onChange={onChange}
           />
         </div>
         <div style={{ marginTop: 20 }}>
@@ -121,7 +134,6 @@ const Autocomplete = ({ suggestions }) => {
             placeholder="zipcode"
             readOnly={true}
             value={addressZipCode}
-          // onChange={onChange}
           />
         </div>
       </>
