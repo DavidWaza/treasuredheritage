@@ -1,42 +1,34 @@
 import "./App.css";
-import axios from "axios";
-import Autocomplete from "./Autocomplete";
-import { useState, useEffect } from "react";
+import "bootstrap/dist/css/bootstrap.min.css";
+import Navbar from "./component/Navbar/NavBar";
+import Herobanner from "./component/Navbar/Herobanner/Herobanner";
+import AboutSection from "./component/Navbar/About/AboutSection";
+import Level from "./component/Navbar/Level/Level";
+import SubTitle from "./component/subTitle";
+import Welcome from "./component/Welcome/Welcome";
+import Events from "./component/Events/Events";
+import MissVis from "./component/MissionStatement/MissVis";
+// import { Col, Container, Row } from "react-bootstrap";
 
-let url = new URL("https://maps.googleapis.com/maps/api/js?key=AIzaSyBS0jDQGP-Gw3c32AS0487MevOQIB7gqkk&libraries=places&callback=initMap&solution_channel=GMP_QB_addressselection_v1_cABC") 
 function App() {
-  const [data, setData] = useState([])
-
-  useEffect(()=> {
-      axios.get(url).then((res) => {
-        setData(res.data.description)
-      })
-    }, [])
-    if(!data) return null;
-
-
-
   return (
     <div className="App">
       <div>
-        <h1>Search Automedys</h1>
-       <Autocomplete
-        suggestions={[
-          // "Alligator",
-          // "Bask",
-          // "Crocodilian",
-          // "Death Roll",
-          // "Eggs",
-          // "Jaws",
-          // "Reptile",
-          // "Solitary",
-          // "Tail",
-          // "Wetlands"
-          // url.description
-        ]}
-      />
+        <Navbar sticky="top" />
+        <Herobanner />
+        <SubTitle title="WELCOME NOTE" />
+        <Welcome />
+        <AboutSection />
+        <SubTitle title="THS LEVEL"/>
+        <Level />
+        <SubTitle title="NEWS & UPDATE"/>
+       <Events />
+       <SubTitle title="MISSION & VISION"/>
+       <MissVis />
       </div>
     </div>
   );
 }
 export default App;
+
+

@@ -1,0 +1,24 @@
+
+div > h3 {
+    color: #892362;
+    font-weight: 900;
+}
+
+ div > a {
+    color: #000;
+    text-decoration: none;
+}
+a:hover {
+    color: #892362;
+    transition: all 1s ease-out;
+}
+.image_abt {
+    min-height: 53vh;
+    background-image: url("https://treasuredheritageschool.com/wp-content/uploads/2019/08/treasured_heritage_school_ado_ekiti.jpg#main");
+    background-position: center;
+    background-size: cover;
+}
+ h4, .header {
+    color: #892362 !important;
+    text-transform: uppercase !important;
+}

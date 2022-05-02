@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto:wght@500&display=swap');
+body {
+    font-family: 'Poppins', sans-serif;
+}
+.event_bg {
+    background-color: #f8f8f8;
+}
+.event_note {
+    padding: 50px 90px;
+    align-items: center;
+}
+.holiday_api_bg {
+    background-color: #d89b0b;
+    /* min-height:100px; */
+    width: 100%;
+    margin: 90px 0px;
+}
+.holiday_api_date {
+    background-color: #892362;
+    height: 100px;
+    width: 100px;
+}
+.date {
+    padding: 20px 0;
+    color: #f8f8f8;
+    text-align: center;
+    text-transform: uppercase;
+}
+.holiday_event {
+    padding: 30px 0;
+    font-size: 20px;
+    text-align: center;
+    /* text-transform: uppercase; */
+}
+@media (min-width:320px) {
+
+    .holiday_api_date {
+        width: 100%;
+    }
+}
+@media (min-width:641px) {
+
+    .holiday_api_date {
+        width: 100%;
+    }
+}

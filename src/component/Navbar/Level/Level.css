@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto:wght@500&display=swap');
+
+.overlay_bg {
+    position: relative;
+    background-image: url("../../../images/bggirl.jpg");
+    background-color: black;
+    background-position: center top;
+    background-size: cover;
+    opacity: 1;
+}
+.level_text {
+    align-content: center;
+    align-items: center;    
+    color: #fff;
+    font-size: 36px;
+    padding-top: 30px;
+    font-family: 'Roboto', sans-serif;
+}
+.paragraph {
+    align-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 18px;
+    line-height: 25px;
+    justify-content: center;
+    justify-items: center;
+}
+.btn-pry {
+    align-content: center;
+    align-items: center;
+    background-color: #892362 !important;
+    color: #fff !important;
+    border-radius: none !important;
+    padding: 15px 20px !important;
+    font-size: 16px !important;
+    font-weight: 600 !important;
+    margin: 20px 0 !important;
+}
+.btn-pry:hover {
+    background-color: #48042e !important;
+    transition: all 0.9s ease-out;
+}
+.creche {
+    background-color: black;
+    opacity: 0.7;
+    margin: 0 auto;
+    min-height: 250px;
+    cursor: pointer;
+}
+.header_title {
+    opacity: 1;
+    z-index: 2;
+    padding: 30px 120px;
+}
+.school_text {
+    padding: 5px 20px
+}
+.creche:hover {
+    background-color: #892362;
+    opacity: 1;
+    color: #fff;
+}
