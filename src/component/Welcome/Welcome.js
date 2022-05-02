@@ -18,7 +18,7 @@ const Welcome = () => {
                 <p style={{ color: "#892362" }}>
                   <strong>Welcome</strong>
                 </p>
-                <p>
+                <p style={{fontSize:"1.1357rem"}}>
                   It is my pleasure to welcome you to our website. We are
                   particularly delighted that you have created time to visit
                   this site. <br />
@@ -34,7 +34,7 @@ const Welcome = () => {
                   <br />
                   We look forward to hearing from you very soon
                 </p>
-                <p>Yours in the affairs of moulding lives</p>
+                <p style={{fontSize:"1.1357rem"}}>Yours in the affairs of moulding lives</p>
                 <p style={{ color: "#892362" }}>
                   Martina George - Bominuru(Mrs)
                 </p>

@@ -8,6 +8,7 @@ import SubTitle from "./component/subTitle";
 import Welcome from "./component/Welcome/Welcome";
 import Events from "./component/Events/Events";
 import MissVis from "./component/MissionStatement/MissVis";
+import Footer from "./component/Footer/Footer";
 // import { Col, Container, Row } from "react-bootstrap";
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
        <Events />
        <SubTitle title="MISSION & VISION"/>
        <MissVis />
+       <Footer />
       </div>
     </div>
   );

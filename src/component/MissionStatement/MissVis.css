@@ -1,16 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto:wght@500&display=swap');
 
-
+body {
+    font-family: 'Poppins', sans-serif;
+}
 .missVis_bg {
     background-color: #f8f8f8;
     background-image: url("https://treasuredheritageschool.com/wp-content/uploads/2019/08/treasured_heritage_school_ado_ekiti.jpg#main");
 }
 .bg {
-    background-color: #892362;
-    opacity: 0.9;
+    background-color: #fff;
+    opacity: 1;
     height:50vh;
+    position: relative;
 }
 .bg_two {
-    background-color: #fff;
-    opacity: 0.4;
+    position: relative;
+    background-color: #892362;
+    opacity: 0.95;
     height: 50vh;
+}
+.diamond {
+    height: 70px;
+    width: 70px;
+    align-items: center;
+    position: absolute;
+    top:30px;
+    left: 40%;
+}
+.mission_state {
+    position: absolute;
+    top: 120px;
+    left: 36%;
+}
+.mission_para {
+    position: absolute;
+    left: 11%;
+    top: 50%;
+    font-size: 1.1375rem;
+    line-height: 1.6875rem
+}
+.vision_title {
+    color: #fff !important;
+}
+@media (min-width:320px) {
+    .bg {
+        height:90vh;
+    }
+    .bg_two {
+        height: 90vh;
+    }
+
+}
+@media (min-width:641px) {
+    .bg {
+        height:50vh;
+    }
+    .bg_two {
+        height: 50vh;
+    }
 }

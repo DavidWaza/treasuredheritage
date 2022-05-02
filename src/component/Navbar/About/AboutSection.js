@@ -31,11 +31,11 @@ const AboutSection = () => {
             <Col sm={6}>
               <div className="ui piled segment">
                 <h4 className="ui header"> {AboutHeader.text} </h4>
-                <p>{AboutSubHeader}</p>
+                <p style={{fontSize:"1.1357rem"}}>{AboutSubHeader}</p>
               </div>
               <div className="ui piled segment">
                 <h4 className="ui header"> {AboutDress.text} </h4>
-                <p>{AboutSubDress}</p>
+                <p style={{fontSize:"1.1357rem"}}>{AboutSubDress}</p>
               </div>
             </Col>
           </Row>

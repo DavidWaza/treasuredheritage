@@ -16,8 +16,8 @@ const Events = () => {
               <header style={{ fontSize: 25, color: "#892362" }}>
                 Our Activities & Events
               </header>
-              <p style={{ paddingTop: 4 }}>See our Upcoming Events</p>
-              <p>
+              <p style={{ paddingTop: 4, fontSize:"1.0375rem"}}>See our Upcoming Events</p>
+              <p style={{ fontSize: "1.1375rem", lineHeight: "1.6875rem" }}>
                 At THS, there is always something exciting happening. Take a
                 look at our upcoming events, and see what we’re doing now.
               </p>
@@ -47,7 +47,7 @@ const Events = () => {
                   <div className="holiday_event">
                     <p style={{ color: "#892362" }}>
                       <Moment format="dddd">{dateToFormat}</Moment>{" "}
-                      {weekDay===true ? "( School)" : "(No School)"}
+                      {weekDay === true ? "( School)" : "(No School)"}
                     </p>
                   </div>
                 </Col>
