@@ -14,3 +14,7 @@ span {
     color: goldenrod;
     font-family: 'Ubuntu', sans-serif;
 }
+.imagestyle {
+    height: 30px;
+    width: 30px;
+}
