@@ -27,3 +27,7 @@ a {
 a:hover {
     color: #fff !important;
 }
+.navbar>.container {
+    z-index: 1000;
+    background-color: #fff;
+}
