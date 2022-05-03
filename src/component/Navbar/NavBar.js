@@ -1,6 +1,7 @@
 import React from "react";
 import { Navbar, Container, Nav, NavDropdown } from "react-bootstrap";
 import "./Navbar.css";
+import { Link } from "react-router-dom";
 
 const NavBar = () => {
   // NavList
@@ -21,7 +22,7 @@ const NavBar = () => {
   };
 
   return (
-    <div>
+    <div ui sticky>
       <Navbar
         style={styles}
         collapseOnSelect
@@ -29,6 +30,7 @@ const NavBar = () => {
         bg="light"
         variant="light"
         className="navbar"
+        
       >
         <Container>
           <Navbar.Brand href="#home">
@@ -41,38 +43,38 @@ const NavBar = () => {
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto">
-              <Nav.Link href="#Home" className="nav-link">
-                {NavListHome.text}
+              <Nav.Link className="nav-link">
+                <Link to="/">{NavListHome.text}</Link>
               </Nav.Link>
-              <Nav.Link href="#About" className="nav-link">
-                {NavListAbout.text}
+              <Nav.Link className="nav-link">
+                <Link to="/about">{NavListAbout.text}</Link>
               </Nav.Link>
-              <Nav.Link href="#Gallery" className="nav-link">
-                {NavListGallery.text}
+              <Nav.Link className="nav-link">
+                <Link to="/gallery">{NavListGallery.text}</Link>
               </Nav.Link>
-              <Nav.Link href="#event" className="nav-link">
-                {NavListEvent.text}
+              <Nav.Link className="nav-link">
+                <Link to="/event">{NavListEvent.text}</Link>
               </Nav.Link>
 
               <NavDropdown title="Activities" id="collasible-nav-dropdown">
                 <NavDropdown.Item href="#action/3.1"></NavDropdown.Item>
                 <NavDropdown.Item className="nav-link" href="#Teacher's day">
-                  {ActivityTeacher.text}
+                  <Link to="/teacher's day">{ActivityTeacher.text}</Link>
                 </NavDropdown.Item>
                 <NavDropdown.Item className="nav-link" href="#excursion">
-                  {ActivityStudent.text}
+                  <Link to="/excursion">{ActivityStudent.text}</Link>
                 </NavDropdown.Item>
                 <NavDropdown.Item className="nav-link" href="#award">
-                  {ActivityPrize.text}
+                  <Link to="/award">{ActivityPrize.text}</Link>
                 </NavDropdown.Item>
               </NavDropdown>
             </Nav>
             <Nav>
-              <Nav.Link eventKey={2} href="#contact">
-                {NavListContact.text}
+              <Nav.Link eventKey={2}>
+                <Link to="/contact">{NavListContact.text}</Link>
               </Nav.Link>
-              <Nav.Link eventKey={2} href="#contact">
-                {NavListPortal.text}
+              <Nav.Link eventKey={2}>
+                <Link to="/portal">{NavListPortal.text}</Link>
               </Nav.Link>
             </Nav>
           </Navbar.Collapse>

@@ -13,9 +13,17 @@ body {
 }
 .nav-link {
     color: #892362 !important;
+
 }
 .nav-link:hover {
     background-color: #892362;
     color: #fff !important;
     transition: all 1s ease-out;
+}
+a {
+    color: #892362 !important;
+    text-decoration: none !important;
+}
+a:hover {
+    color: #fff !important;
 }
