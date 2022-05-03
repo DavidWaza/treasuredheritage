@@ -2,8 +2,8 @@
 
 .overlay_bg {
     position: relative;
-    background-image: url("../../../images/bggirl.jpg");
-    background-color: black;
+    /* background-image: url("../../../images/bggirl.jpg"); */
+    background-color: #f8f8f8;
     background-position: center top;
     background-size: cover;
     opacity: 1;
@@ -11,7 +11,7 @@
 .level_text {
     align-content: center;
     align-items: center;    
-    color: #fff;
+    color: #892362;
     font-size: 36px;
     padding-top: 30px;
     font-family: 'Roboto', sans-serif;
@@ -19,7 +19,7 @@
 .paragraph {
     align-content: center;
     align-items: center;
-    color: #fff;
+    color: #000;
     font-size: 18px;
     line-height: 25px;
     justify-content: center;
@@ -41,8 +41,8 @@
     transition: all 0.9s ease-out;
 }
 .creche {
-    background-color: black;
-    opacity: 0.7;
+    background-color: #892362;
+    opacity: 1;
     margin: 0 auto;
     min-height: 250px;
     cursor: pointer;
@@ -51,14 +51,16 @@
     opacity: 1;
     z-index: 2;
     padding: 30px 120px;
+    color:#fff
 }
 .school_text {
     padding: 0px 10px;
     font-size: 1.1375rem;
-    line-height: 1.6875rem
+    line-height: 1.6875rem;
+    color:#fff
 }
 .creche:hover {
-    background-color: #892362;
+    background-color: #48042e;
     opacity: 1;
     color: #fff;
 }

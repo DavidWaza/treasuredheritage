@@ -14,11 +14,27 @@ a:hover {
 }
 .image_abt {
     min-height: 61vh;
-    background-image: url("https://treasuredheritageschool.com/wp-content/uploads/2019/08/treasured_heritage_school_ado_ekiti.jpg#main");
+    background-image: url("https://treasuredheritageschool.com/wp-content/uploads/2019/06/game.jpg");
     background-position: center;
     background-size: cover;
 }
  h4, .header {
     color: #892362 !important;
     text-transform: uppercase !important;
+}
+.subHeader {
+    padding: 10px 30px;
+}
+.header {
+    padding:0px 30px !important;
+}
+.small_png {
+    height: 35px;
+    width: 35px;
+    text-align: center;
+    margin: 0 auto;
+}
+.header_head {
+    font-size: 18px;
+    color: #892362;
 }
