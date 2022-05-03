@@ -41,13 +41,13 @@ const Footer = () => {
             <img src={Contact} alt="" style={{ height: 50, width: 50 }} />
             <Heading>Contact Us</Heading>
             <div style={{ display: "flex" }}>
-              <img src={Calls} alt="" style={{ height: 50, width: 50 }} />
+              <img src={Calls} alt="" style={{ height: 35, width: 35 }} />
               <FooterLink href="#">
                 08029246221 08023055307 08035031946
               </FooterLink>
             </div>
             <div style={{ display: "flex" }}>
-              <img src={Loaction} alt="" style={{ height: 50, width: 50 }} />
+              <img src={Loaction} alt="" style={{ height: 35, width: 35 }} />
               <FooterLink href="#">
                 112, Moferere Street, off Ajilosun,Behind Ado Local Govt.,
                 Health Centre, Ado-Ekiti.
