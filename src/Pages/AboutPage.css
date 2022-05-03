@@ -44,3 +44,28 @@ body {
     background-color: #892362;
     color: #fff;
 }
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px) {
+    .about_title {
+        left: 20%;
+        text-transform: uppercase !important;
+        font-weight: bolder;
+        background-color: #892362;
+        padding: 10px 15px;
+    }
+  }
+  @media only screen 
+  and (min-device-width: 540px) 
+  and (max-device-width: 700px) {
+    .about_title {
+        left: 25%;
+        text-transform: uppercase !important;
+        font-weight: bolder;
+        background-color: #892362;
+        padding: 10px 15px;
+    }
+    .mission_para {
+        margin-top: -90px;
+    }
+  }

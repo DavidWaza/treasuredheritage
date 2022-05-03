@@ -36,7 +36,7 @@ const AboutSection = () => {
               <Row style={{ paddingLeft: 30, marginTop: 20 }}>
                 <Col sm={6}>
                   <img src={DiamondSmall} className="small_png" alt="" />
-                  <div>
+                  <div className="mission_div">
                     <div className="header_head">
                       <header>Our Mission</header>
                     </div>
