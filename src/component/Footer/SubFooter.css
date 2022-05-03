@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto:wght@500&family=Ubuntu:wght@500&display=swap');
+.subfooter {
+    background-color: rgb(33, 32, 32);
+    min-height: 100px;
+}
+.footer_text {
+    text-align: center;
+    color: white;
+    font-size: 1.245rem;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+span {
+    color: goldenrod;
+    font-family: 'Ubuntu', sans-serif;
+}

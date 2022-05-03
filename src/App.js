@@ -9,6 +9,7 @@ import Welcome from "./component/Welcome/Welcome";
 import Events from "./component/Events/Events";
 import MissVis from "./component/MissionStatement/MissVis";
 import Footer from "./component/Footer/Footer";
+import SubFooter from "./component/Footer/SubFooter";
 // import { Col, Container, Row } from "react-bootstrap";
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
        <SubTitle title="MISSION & VISION"/>
        <MissVis />
        <Footer />
+       <SubFooter />
       </div>
     </div>
   );
