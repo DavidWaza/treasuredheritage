@@ -3,6 +3,7 @@ import Calls from "../../images/calls.png";
 import Contact from "../../images/contact.png";
 import Loaction from "../../images/location.png";
 import Events from "../../images/events.png";
+import Internet from "../../images/internet.png";
 import FaceBook from "../../images/fb.png";
 import Instagram from "../../images/insta.png";
 import Twitter from "../../images/twitter.png";
@@ -19,9 +20,6 @@ import {
 const Footer = () => {
   return (
     <Box>
-      <h1
-        style={{ color: "green", textAlign: "center", marginTop: "-50px" }}
-      ></h1>
       <Container>
         <Row>
           <Column>
@@ -56,7 +54,8 @@ const Footer = () => {
               </FooterLink>
             </div>
           </Column>
-          <Column>
+          <Column >
+		  <img src={Internet} alt="" style={{ height: 50, width: 50 }} />
             <Heading>Social Media</Heading>
             <div style={{ display: "flex" }}>
               <FooterLink href="#">
