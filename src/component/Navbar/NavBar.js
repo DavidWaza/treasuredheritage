@@ -7,7 +7,6 @@ const NavBar = () => {
   // NavList
   const NavListHome = { text: "Home" };
   const NavListAbout = { text: "About THS" };
-  const NavListEvent = { text: "Event" };
   const NavListGallery = { text: "Gallery" };
   const NavListContact = { text: "Contact" };
   const NavListPortal = { text: "Portal" };
@@ -30,7 +29,6 @@ const NavBar = () => {
         bg="light"
         variant="light"
         className="navbar"
-        
       >
         <Container>
           <Navbar.Brand href="#home">
@@ -52,10 +50,6 @@ const NavBar = () => {
               <Nav.Link className="nav-link">
                 <Link to="/gallery">{NavListGallery.text}</Link>
               </Nav.Link>
-              <Nav.Link className="nav-link">
-                <Link to="/event">{NavListEvent.text}</Link>
-              </Nav.Link>
-
               <NavDropdown title="Activities" id="collasible-nav-dropdown">
                 <NavDropdown.Item href="#action/3.1"></NavDropdown.Item>
                 <NavDropdown.Item className="nav-link" href="#Teacher's day">

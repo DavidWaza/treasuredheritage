@@ -3,7 +3,8 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
 import Navbar from "./component/Navbar/NavBar";
-import AboutPage from "./Pages/AboutPage";
+import AboutPage from "./Pages/About/AboutPage";
+import GalleryPage from "./Pages/Gallery/GalleryPage";
 import Footer from "./component/Footer/Footer";
 import SubFooter from "./component/Footer/SubFooter";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
@@ -15,6 +16,7 @@ ReactDOM.render(
     <Routes>
       <Route path="/" element={<App />} />
       <Route path="about" element={<AboutPage />} />
+      <Route path="gallery" element={<GalleryPage />} />
       <Route
         path="*"
         element={

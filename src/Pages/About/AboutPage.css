@@ -3,8 +3,7 @@
 body {
     font-family: 'Poppins', sans-serif;
 }
-.about_heroBanner{
-    background-image: url("../images/bggirl.jpg");
+.global_heroBanner{
     background-size: cover;
     background-position:70% 10%;
     min-height: 50vh;
@@ -12,13 +11,16 @@ body {
     position: relative;
     border-bottom: 6px solid #d89b0b;
 }
-.about_title {
+.global_title {
     position: absolute;
     font-weight: 900;
     font-size: 40px;
     color: #fff;
     left: 40%;
     top: 50%;
+}
+.about_banner {
+    background-image: url("../../images/bggirl.jpg");
 }
 .about_header {
     font-weight: 900;
