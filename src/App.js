@@ -1,6 +1,5 @@
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-// import Navbar from "./component/Navbar/NavBar";
 import Herobanner from "./component/Navbar/Herobanner/Herobanner";
 import AboutSection from "./component/Navbar/About/AboutSection";
 import Level from "./component/Navbar/Level/Level";

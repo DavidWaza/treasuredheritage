@@ -1,7 +1,7 @@
 import AboutUs from "../../images/about-us.png";
 import Calls from "../../images/calls.png";
 import Contact from "../../images/contact.png";
-import Loaction from "../../images/location.png";
+import Location from "../../images/location.png";
 import Events from "../../images/events.png";
 import Internet from "../../images/internet.png";
 import FaceBook from "../../images/fb.png";
@@ -16,6 +16,8 @@ import {
   FooterLink,
   Heading,
 } from "./FooterStyles";
+
+const EventsDay =  ["watermelon day", "parents day", "teachers day", 'lady bug', 'penguin day'] 
 
 const Footer = () => {
   return (
@@ -32,10 +34,14 @@ const Footer = () => {
           <Column>
             <img src={Events} alt="" style={{ height: 50, width: 50 }} />
             <Heading>Events</Heading>
-            <FooterLink href="#">Mother's Day</FooterLink>
+            {/* <FooterLink href="#">Mother's Day</FooterLink>
             <FooterLink href="#">Teacher's Day</FooterLink>
             <FooterLink href="#">WaterMelon Day</FooterLink>
-            <FooterLink href="#">Excursions</FooterLink>
+            <FooterLink href="#">Excursions</FooterLink> */}
+            {EventsDay.map((event) => {
+              return(
+              <FooterLink href="#">{event}</FooterLink>
+            )})}
           </Column>
           <Column>
             <img src={Contact} alt="" style={{ height: 50, width: 50 }} />
@@ -47,7 +53,7 @@ const Footer = () => {
               </FooterLink>
             </div>
             <div style={{ display: "flex" }}>
-              <img src={Loaction} alt="" style={{ height: 35, width: 35 }} />
+              <img src={Location} alt="" style={{ height: 35, width: 35 }} />
               <FooterLink href="#">
                 112, Moferere Street, off Ajilosun,Behind Ado Local Govt.,
                 Health Centre, Ado-Ekiti.
@@ -58,7 +64,7 @@ const Footer = () => {
 		  <img src={Internet} alt="" style={{ height: 50, width: 50 }} />
             <Heading>Social Media</Heading>
             <div style={{ display: "flex" }}>
-              <FooterLink href="#">
+              <FooterLink href="https://web.facebook.com/people/Treasured-Heritage-School-Christian-Montessori/100063690275152/">
                 <img src={FaceBook} alt="" style={{ height: 50, width: 50 }} />
               </FooterLink>
               <FooterLink href="#">

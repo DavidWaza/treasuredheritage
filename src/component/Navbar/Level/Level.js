@@ -5,7 +5,7 @@ import "./Level.css";
 const Level = () => {
   const LevelHeader = { text: "Our Levels" };
   const Paragraph = [
-    " Treasured Heritage consists of FOUR Levels united by a commitment to providing education of the highest quality   Every level is led by reputable academics dedicated to driving innovation in research and learning. Discover the programs available in each level.",
+    " Treasured Heritage consists of FOUR Levels united by a commitment to providing education of the highest quality.  Every level is led by reputable academics dedicated to driving innovation in research and learning. Discover the programs available in each level.",
   ];
 
   return (

@@ -1,0 +1,39 @@
+
+.address_section{
+    position: relative;
+    display: flex;
+    background-color: #892362;
+    height: 50vh;
+}
+.inner_section {
+    text-align: center;
+    margin-top: 10%;
+    color: #fff;
+}
+.call_section {
+    background-color: #fff;
+    height: 50vh;
+}
+#name_text {
+    font-size: 1.2rem;
+    margin-top: 15px;
+    padding:10px 15px
+}
+#name_text_email {
+    font-size: 1rem;
+    padding:10px 11px
+}
+.contact_bg{
+    background-image: url('../../images/ALL PICTURE/school structure/bg.jpg');
+    background-color: #892362;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding-bottom: 10px;
+}
+@media only screen and (max-width:350px){
+    #name_text_email {
+        font-size: 12px;
+        padding: 0;
+    }
+}

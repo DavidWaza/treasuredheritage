@@ -1,0 +1,101 @@
+body {
+    height: 100vh;
+    display: grid;
+    /* place-items: center; */
+}
+  .form {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .p {
+    color: #bf1650;
+    text-align: center;
+  }
+  
+  textarea,
+  select,
+  input {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+      "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+      sans-serif;
+    display: block;
+    box-sizing: border-box;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 35%;
+    border-radius: 4px;
+    border: 1px solid white;
+    padding: 1.4rem;
+    margin-bottom: 15px;
+    font-size: 14px;
+    position: relative;
+    border: 1px solid #892362;
+  }
+  
+  input[type="submit"],
+  .button {
+    position: relative;
+    background: #892362;
+    color: white;
+    text-transform: uppercase;
+    border: none;
+    font-weight: 600;
+    margin-top: 20px;
+    padding: 20px;
+    font-size: 16px;
+    display: block;
+    appearance: none;
+    border-radius: 4px;
+    font-weight: 400;
+    transition: 0.3s all;
+    margin-bottom: 20px;
+  }
+
+  /* button[type="button"] {
+    padding: 5px;
+    letter-spacing: 0px;
+    text-transform: none;
+    padding: 10px;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+  } */
+  
+  input[type="submit"]:hover,
+  button[type="button"]:hover {
+    background: #bf1650;
+    color: white;
+  }
+  
+  input[type="submit"]:active {
+    transition: 0.3s all;
+    top: 2px;
+  }
+  
+  .preact {
+    opacity: 0;
+    color: white;
+  }
+  
+  .preact:hover {
+    opacity: 1;
+  }
+  .contact-img {
+      position: absolute;
+      height: 30px;
+      width: 30px;
+      bottom:2px;
+      left: 62%;
+      z-index: 1000;
+  }
+  .contact-img-2 {
+    bottom: -59px;
+  }
+  .contact-img-3 {
+    bottom: -123px;
+  }
+  .contact-img-4 {
+    bottom: -187px;
+  }
+  

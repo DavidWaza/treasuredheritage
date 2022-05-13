@@ -10,5 +10,36 @@ teachers day
 https://treasuredheritageschool.com/wp-content/uploads/2019/10/world-teachers-day-2019-22.jpg
 https://treasuredheritageschool.com/wp-content/uploads/2019/08/teachers_day_ths_ekiti.jpg
 
+ <Col sm={4}>
+            <img  src={pic1} alt="pen1" className='imgsrc'/>
+          </Col>
+          <Col sm={4}>
+          <img  src={pic2} alt="pen1" className='imgsrc'/>
+          </Col>
+          <Col sm={4}>
+          <img  src={pic3} alt="pen1" className='imgsrc'/>
+          </Col>
+        </Row>
+        <Row style={{marginTop:10}}>
+          <Col sm={4}>
+            <img  src={pic4} alt="pen1" className='imgsrc'/>
+          </Col>
+          <Col sm={4}>
+          <img  src={pic5} alt="pen1" className='imgsrc'/>
+          </Col>
+          <Col sm={4}>
+          <img  src={pic6} alt="pen1" className='imgsrc'/>
+          </Col>
+        </Row>
+        <Row style={{marginTop:10}}>
+          <Col sm={4}>
+            <img  src={pic4} alt="pen1" className='imgsrc'/>
+          </Col>
+          <Col sm={4}>
+          <img  src={pic5} alt="pen1" className='imgsrc'/>
+          </Col>
+          <Col sm={4}>
+          <img  src={pic6} alt="pen1" className='imgsrc'/>
+          </Col>
 
       

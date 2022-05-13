@@ -5,8 +5,13 @@ import App from "./App";
 import Navbar from "./component/Navbar/NavBar";
 import AboutPage from "./Pages/About/AboutPage";
 import GalleryPage from "./Pages/Gallery/GalleryPage";
+import Blog from './Pages/Blog/Blog'
+import Penquine from './Pages/penquine/penquine'
 import Footer from "./component/Footer/Footer";
 import SubFooter from "./component/Footer/SubFooter";
+import LadyBug from "./Pages/LadyBug/LadyBug";
+import Dinosaur from "./Pages/Dinosaur/Dinosaur";
+import Contact from "./Pages/Contact/Contact";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import reportWebVitals from "./reportWebVitals";
 
@@ -17,6 +22,11 @@ ReactDOM.render(
       <Route path="/" element={<App />} />
       <Route path="about" element={<AboutPage />} />
       <Route path="gallery" element={<GalleryPage />} />
+      <Route path="blog" element={<Blog />} />
+      <Route path="penquine" element={<Penquine />} />
+      <Route path='ladybug' element={<LadyBug />} />
+      <Route path='dinosaur' element={<Dinosaur />} />
+      <Route path = "contact" element={<Contact />} />
       <Route
         path="*"
         element={

@@ -2,3 +2,8 @@
     background-image: url("../../images/ths-pupils.jpg");
     background-position: 10% 20% !important;
 }
+.phone_view {
+    height: 20px;
+    background-color: purple;
+    padding: 10px 30px;
+}

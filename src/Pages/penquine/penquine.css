@@ -1,0 +1,13 @@
+
+.penquine_banner {
+    background-image: url('../../images/ALL PICTURE/penguin/penquin_banner.jpg');
+}
+#text {
+    /* margin-top: 20px; */
+    font-size: 18px;
+    padding: 20px;
+}
+.imgsrc {
+    height: 250px;
+    width: 100%;
+}

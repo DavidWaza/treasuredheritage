@@ -1,8 +1,17 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import "../About/AboutPage.css";
 import "./GalleryPage.css";
 const Gallery = () => {
+  const [isDeskView, setIsDeskView] = useState(window.innerWidth > 650);
+
+  const updateMedia = () => {
+    setIsDeskView(window.innerWidth > 650)
+  }
+  useEffect(() => {
+    window.addEventListener("resize", updateMedia);
+    return () => window.removeEventListener("resize", updateMedia);
+  });
   const imgSize = {
     height: "50vh",
     width: "100%",
@@ -66,7 +75,7 @@ const Gallery = () => {
       <Row>
         <Col sm={12}>
           <div className="global_heroBanner gallery_banner">
-            <h1 className="global_title">Gallery</h1>
+            <h1 className={isDeskView ? "global_title" : "phone_view"}>Gallery</h1>
           </div>
         </Col>
       </Row>

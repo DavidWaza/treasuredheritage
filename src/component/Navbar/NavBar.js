@@ -7,14 +7,16 @@ const NavBar = () => {
   // NavList
   const NavListHome = { text: "Home" };
   const NavListAbout = { text: "About THS" };
-  const NavListGallery = { text: "Gallery" };
+  const NavListBlog = { text: "Blog" };
   const NavListContact = { text: "Contact" };
   const NavListPortal = { text: "Portal" };
 
   //   Activities
   const ActivityTeacher = { text: "Teacher's Day" };
-  const ActivityStudent = { text: "Student's Excursion" };
-  const ActivityPrize = { text: "Prize giving Day" };
+  const ActivityLadyBugs = { text: "Lady Bugs Day" };
+  const ActivityDinosaur = { text: "Dinosaur Day" };
+  const ActivityPenquine = { text: "Penquine Day" };
+  const ActivityPrize = { text: "Prize Day" };
 
   const styles = {
     height: 130,
@@ -48,15 +50,21 @@ const NavBar = () => {
                 <Link to="/about">{NavListAbout.text}</Link>
               </Nav.Link>
               <Nav.Link className="nav-link">
-                <Link to="/gallery">{NavListGallery.text}</Link>
+                <Link to="/blog">{NavListBlog.text}</Link>
               </Nav.Link>
               <NavDropdown title="Activities" id="collasible-nav-dropdown">
                 <NavDropdown.Item href="#action/3.1"></NavDropdown.Item>
-                <NavDropdown.Item className="nav-link" href="#Teacher's day">
+                <NavDropdown.Item className="nav-link" href="#TeachersDay">
                   <Link to="/teacher's day">{ActivityTeacher.text}</Link>
                 </NavDropdown.Item>
-                <NavDropdown.Item className="nav-link" href="#excursion">
-                  <Link to="/excursion">{ActivityStudent.text}</Link>
+                <NavDropdown.Item className="nav-link" href="#LadyBug">
+                  <Link to="/ladybug">{ActivityLadyBugs.text}</Link>
+                </NavDropdown.Item>
+                <NavDropdown.Item className="nav-link" href="#Penguine">
+                  <Link to="/penquine">{ActivityPenquine.text}</Link>
+                </NavDropdown.Item>
+                <NavDropdown.Item className="nav-link" href="#dinosaur">
+                  <Link to="/dinosaur">{ActivityDinosaur.text}</Link>
                 </NavDropdown.Item>
                 <NavDropdown.Item className="nav-link" href="#award">
                   <Link to="/award">{ActivityPrize.text}</Link>

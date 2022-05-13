@@ -6,7 +6,7 @@ import VisionSmall from "../../../images/visionxs.png";
 const AboutSection = () => {
   const AboutHeader = { text: "what we do" };
   const AboutSubHeader = [
-    "Treasured Heritage School (THS) is a Christian Montessori  School that offers educational services from Creche to Grade levels. We are poised to build a total child that is spiritually, morally and academically sound, exuding self  confidence that can make the child compete favourably with.",
+    "Treasured Heritage School (THS) is a Christian Montessori  School that offers educational services from Creche to Grade levels. We are poised to build a total child that is spiritually, morally and academically sound, exuding self  confidence that can make the child compete favourably with his/her contemporaries in any part of the world.",
   ];
   return (
     <div>
@@ -16,7 +16,7 @@ const AboutSection = () => {
             <Col className="text_section" style={{ paddingTop: 25 }}>
               <h3>ABOUT THS</h3>
               <a href="#About">
-                <p style={{ marginBottom: 20 }}>Know More > </p>
+                <p style={{ marginBottom: 20 }}>Know More {'>'} </p>
               </a>
             </Col>
           </Row>
