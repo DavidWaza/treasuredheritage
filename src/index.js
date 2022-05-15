@@ -12,6 +12,7 @@ import SubFooter from "./component/Footer/SubFooter";
 import LadyBug from "./Pages/LadyBug/LadyBug";
 import Dinosaur from "./Pages/Dinosaur/Dinosaur";
 import Contact from "./Pages/Contact/Contact";
+import Calendar from "./calendar/Calendar";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import reportWebVitals from "./reportWebVitals";
 
@@ -27,6 +28,7 @@ ReactDOM.render(
       <Route path='ladybug' element={<LadyBug />} />
       <Route path='dinosaur' element={<Dinosaur />} />
       <Route path = "contact" element={<Contact />} />
+      <Route path = "calendar" element={<Calendar />} />
       <Route
         path="*"
         element={

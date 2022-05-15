@@ -1,0 +1,7 @@
+
+.calendar_banner {
+    background-image: url('../images/calendar.jpg');
+    background-size: cover;
+    background-position: 10% 20%;
+    background-repeat: no-repeat;
+}

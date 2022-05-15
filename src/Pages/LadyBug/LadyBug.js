@@ -1,6 +1,7 @@
 import React from "react";
-import './LadyBug.css';
+import "./LadyBug.css";
 import { Container, Row, Col } from "react-bootstrap";
+import { HeritageSubText, HeritageText, LadyBugMap } from "../Map/Map";
 
 const LadyBug = () => {
   return (
@@ -13,6 +14,23 @@ const LadyBug = () => {
             </div>
           </Col>
         </Row>
+        <Row>
+          <Col>
+            <p id="text">
+              <span style={{ color: "#892362" }}>{HeritageText}</span>{" "}
+              {HeritageSubText} Lady Bug Day
+            </p>
+          </Col>
+        </Row>
+        {LadyBugMap.map(({ id, src }) => {
+          return (
+            <Row>
+              <Col key={id} className="imgsrc">
+                {src}
+              </Col>
+            </Row>
+          );
+        })}
       </Container>
     </div>
   );

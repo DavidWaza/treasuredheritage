@@ -1,6 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import "./Events.css";
+import { Link } from "react-router-dom";
 import Moment from "react-moment";
 
 const Events = () => {
@@ -21,14 +22,14 @@ const Events = () => {
                 At THS, there is always something exciting happening. Take a
                 look at our upcoming events, and see what we’re doing now.
               </p>
-              <a href="#calendar">
+              <Link to="/calendar">
                 <div
                   className="ui button"
                   style={{ backgroundColor: "#892362", color: "#fff" }}
                 >
                   See all Events
                 </div>
-              </a>
+              </Link>
             </div>
           </Col>
           <Col sm={6}>
