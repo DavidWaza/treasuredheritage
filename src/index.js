@@ -13,6 +13,7 @@ import LadyBug from "./Pages/LadyBug/LadyBug";
 import Dinosaur from "./Pages/Dinosaur/Dinosaur";
 import Contact from "./Pages/Contact/Contact";
 import Calendar from "./calendar/Calendar";
+import LevelPage from './Pages/LevelPage/index'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import reportWebVitals from "./reportWebVitals";
 
@@ -29,6 +30,7 @@ ReactDOM.render(
       <Route path='dinosaur' element={<Dinosaur />} />
       <Route path = "contact" element={<Contact />} />
       <Route path = "calendar" element={<Calendar />} />
+      <Route path = "level" element={<LevelPage />} />
       <Route
         path="*"
         element={

@@ -22,15 +22,15 @@ const LadyBug = () => {
             </p>
           </Col>
         </Row>
-        {LadyBugMap.map(({ id, src }) => {
-          return (
-            <Row>
-              <Col key={id} className="imgsrc">
-                {src}
+        <Row>
+          {LadyBugMap.map(({ id, src }) => {
+            return (
+              <Col sm={4} key={id} className="imgDisplay">
+                <img src={src} alt="img" className="imgsrc" />
               </Col>
-            </Row>
-          );
-        })}
+            );
+          })}
+        </Row>
       </Container>
     </div>
   );

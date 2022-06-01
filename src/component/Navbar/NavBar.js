@@ -23,8 +23,10 @@ const NavBar = () => {
   };
 
   return (
-    <div ui sticky>
+    <div>
       <Navbar
+        ui
+        sticky
         style={styles}
         collapseOnSelect
         expand="lg"
@@ -75,7 +77,7 @@ const NavBar = () => {
               <Nav.Link eventKey={2}>
                 <Link to="/contact">{NavListContact.text}</Link>
               </Nav.Link>
-              <Nav.Link eventKey={2}>
+              <Nav.Link eventKey={2} className="Portal-link">
                 <Link to="/portal">{NavListPortal.text}</Link>
               </Nav.Link>
             </Nav>

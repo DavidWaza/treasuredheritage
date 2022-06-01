@@ -1,7 +1,8 @@
-import "./AboutSection.css";
 import { Container, Row, Col } from "react-bootstrap";
 import DiamondSmall from "../../../images/diamondxs.png";
 import VisionSmall from "../../../images/visionxs.png";
+import { Link } from "react-router-dom";
+import "./AboutSection.css";
 
 const AboutSection = () => {
   const AboutHeader = { text: "what we do" };
@@ -16,7 +17,9 @@ const AboutSection = () => {
             <Col className="text_section" style={{ paddingTop: 25 }}>
               <h3>ABOUT THS</h3>
               <a href="#About">
-                <p style={{ marginBottom: 20 }}>Know More {'>'} </p>
+                <Link to="/about">
+                  <p style={{ marginBottom: 20 }}>Know More {">"} </p>
+                </Link>
               </a>
             </Col>
           </Row>
@@ -41,11 +44,15 @@ const AboutSection = () => {
                       <header>Our Mission</header>
                     </div>
                     <p>
-                       Provide a sound Montessori system of education required{" "}
+                      Provide a sound Montessori system of education required{" "}
                       <br />
                       for the acquisition of relevant knowledge and skills.
                       <br />
-                      <a href="#MisVis"><div className="ui button" style={{marginTop:15}}>Show more</div></a>
+                      <Link to="/about">
+                        <div className="ui button" style={{ marginTop: 15 }}>
+                          Show more
+                        </div>
+                      </Link>
                       <br />
                     </p>
                   </div>
@@ -60,9 +67,13 @@ const AboutSection = () => {
                       To be among the foremost providers of all-round
                       qualitative education in Nigeria.
                       <br />
-                      <div className="ui button" style={{marginTop:35}}>Show more</div>
+                      <Link to="/about">
+                        <div className="ui button" style={{ marginTop: 35 }}>
+                          Show more
+                        </div>
+                      </Link>
                       <br />
-                      </p>
+                    </p>
                   </div>
                 </Col>
               </Row>

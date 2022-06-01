@@ -1,7 +1,6 @@
 body {
     height: 100vh;
     display: grid;
-    /* place-items: center; */
 }
   .form {
     max-width: 800px;
@@ -53,15 +52,7 @@ body {
     margin-bottom: 20px;
   }
 
-  /* button[type="button"] {
-    padding: 5px;
-    letter-spacing: 0px;
-    text-transform: none;
-    padding: 10px;
-    letter-spacing: 1px;
-    margin-bottom: 20px;
-  } */
-  
+
   input[type="submit"]:hover,
   button[type="button"]:hover {
     background: #bf1650;

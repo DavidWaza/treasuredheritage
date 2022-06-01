@@ -1,66 +1,73 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto:wght@500&display=swap');
 
-.overlay_bg {
-    position: relative;
-    /* background-image: url("../../../images/bggirl.jpg"); */
-    background-color: #f8f8f8;
-    background-position: center top;
-    background-size: cover;
-    opacity: 1;
-}
-.level_text {
-    align-content: center;
-    align-items: center;    
-    color: #892362;
-    font-size: 36px;
-    padding-top: 30px;
-    font-family: 'Roboto', sans-serif;
-}
-.paragraph {
-    align-content: center;
-    align-items: center;
-    color: #000;
-    font-size: 18px;
-    line-height: 25px;
+.headerDiv {
+    height: 100px;
+    width: 100%;
+    background-color: #892362;
+    display: flex;
     justify-content: center;
     justify-items: center;
+    padding: 30px 0px;
 }
-.btn-pry {
-    align-content: center;
-    align-items: center;
-    background-color: #892362 !important;
-    color: #fff !important;
-    border-radius: none !important;
-    padding: 15px 20px !important;
-    font-size: 16px !important;
-    font-weight: 600 !important;
-    margin: 20px 0 !important;
+.headerDiv-T {
+    height: 100px;
+    width: 100%;
+    background-color: #d89b0b;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    padding: 30px 0px;
 }
-.btn-pry:hover {
-    background-color: #48042e !important;
-    transition: all 0.9s ease-out;
+.headerTitle {
+    font-size: 1.5rem;
+    text-align: center;
+    color: #fff;
+    font-weight: 700;
 }
-.creche {
-    background-color: #892362;
-    opacity: 1;
-    margin: 0 auto;
-    min-height: 250px;
+.img_card {
+    height: 40vh;
+    background-color: #000;
+   
+    background-position: 50% 10%;
+    background-size: cover;
+}
+.crecheImg {
+    background-image: url('../../../images/bgboy.jpg');
+}
+.preImg {
+    background-image: url('../../../images/Pre.jpeg');
+}
+.nurseryImg {
+    background-image: url('../../../images/nursery.jpeg');
+}
+.icon {
+    height: 30px;
+    width: 30px;
+    margin-right: 20px;
+}
+.headerlink {
+    font-size: 16px;
+    text-decoration: underline;
     cursor: pointer;
 }
-.header_title {
-    opacity: 1;
-    z-index: 2;
-    padding: 30px 120px;
-    color:#fff
-}
-.school_text {
-    padding: 0px 10px;
+.content {
+    padding: 20px 0px;
     font-size: 1.1375rem;
-    line-height: 1.6875rem;
-    color:#fff
+    line-height: 27px;
+    color:#333
 }
-.creche:hover {
-    background-color: #48042e;
-    opacity: 1;
+.btn-grade {
+    width: 140px;
+    height: 47px;
+    border: 1px solid #892362;
+}
+.btn-grade:hover {
+    background-color: #892362;
+    transition: all 0.5s ease-in-out;
     color: #fff;
+    border: 1px solid #d89b0b;
+}
+.btn-yellow:hover {
+    background-color: #d89b0b !important;
+
 }

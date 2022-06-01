@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import "./MissVis.css";
-import diamond from "../../images/diamond.gif";
+import diamond from "../../images/diamond.png";
 import eye from "../../images/vision.png";
 
 const MissVis = () => {

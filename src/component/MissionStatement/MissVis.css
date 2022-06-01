@@ -8,16 +8,18 @@ body {
     background-image: url("https://treasuredheritageschool.com/wp-content/uploads/2019/08/treasured_heritage_school_ado_ekiti.jpg#main");
 }
 .bg {
-    background-color: #fff;
+    background-color: #fefefe;
     opacity: 1;
     height:50vh;
     position: relative;
+    /* border: 2px solid #892362; */
 }
 .bg_two {
     position: relative;
     background-color: #892362;
     opacity: 0.95;
     height: 50vh;
+    border: 1px solid #f8f8f8;
 }
 .diamond {
     height: 70px;

@@ -13,6 +13,6 @@
     right: 350px;
     color: #fff;
 }
-/* .carousel {
-    height: 70vh;
-} */
+.carousel {
+    margin-top: 6px !important;
+}

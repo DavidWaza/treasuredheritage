@@ -1,15 +1,14 @@
 import "react-responsive-carousel/lib/styles/carousel.min.css"; 
 import { Carousel } from "react-responsive-carousel";
-import Img1 from "../../../images/ALL PICTURE/TO POST/crecheslider.jpg";
-import Img2 from "../../../images/ALL PICTURE/bournvita/bournvita.jpg";
-import Img3 from "../../../images/ALL PICTURE/judge.jpg";
+import Img1 from "../../../images/AllPicture/TO POST/crecheslider.jpg";
+import Img2 from "../../../images/AllPicture/bournvita/bournvita.jpg";
+import Img3 from "../../../images/AllPicture/judge.jpg";
 import "./Herobanner.css";
 
 const Herobanner = () => {
   // Hero Text
   const HeroTextNum = { text: "numeracy" };
   const HeroTextLit = { text: "literacy" };
-  // const HeroTextSport = { text: "sport activities" };
 
 //   subText
 const HeroSubtextNum = { subText: "THS Pupils during number readiness class using number rods" };
@@ -30,7 +29,6 @@ const HeroSubtextSport = { subText: "Exercise your body.... Its makes you stay h
         </div>
         <div>
           <img src={Img3} alt="slider" />
-          {/* <p className="legend">{HeroTextSport.text}</p> */}
           <p className="sub_legend">{HeroSubtextSport.subText}</p>
         </div>
       </Carousel>

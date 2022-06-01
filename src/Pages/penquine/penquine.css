@@ -1,6 +1,6 @@
 
 .penquine_banner {
-    background-image: url('../../images/ALL PICTURE/penguin/penquin_banner.jpg');
+    background-image: url('../../images/AllPicture/penguin/penquin_banner.jpg');
 }
 #text {
     /* margin-top: 20px; */
@@ -11,4 +11,8 @@
     /* display: flex; */
     height: 250px;
     width: 100%;
+    display: flex;
+}
+.imgDisplay {
+    display: flex;
 }

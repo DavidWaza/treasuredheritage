@@ -48,7 +48,7 @@ const Events = () => {
                   <div className="holiday_event">
                     <p style={{ color: "#892362" }}>
                       <Moment format="dddd">{dateToFormat}</Moment>{" "}
-                      {weekDay === true ? "( School)" : "(No School)"}
+                      {weekDay === true ? '(School)' : '(No School)'}
                     </p>
                   </div>
                 </Col>

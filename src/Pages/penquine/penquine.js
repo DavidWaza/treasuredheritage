@@ -22,15 +22,16 @@ const penquine = () => {
             </p>
           </Col>
         </Row>
-        {PenguinMap.map(({ id, src }) => {
-          return (
-            <Row style={{ display: "flex" }}>
-              <Col sm={4} className="imgsrc" key={id}>
-                {src}
+
+        <Row style={{ display: "flex" }}>
+          {PenguinMap.map(({ id, src }) => {
+            return (
+              <Col sm={4} key={id} className="imgDisplay">
+                <img src={src} alt="img" className="imgsrc" />
               </Col>
-            </Row>
-          );
-        })}
+            );
+          })}
+        </Row>
       </Container>
     </div>
   );

@@ -15,6 +15,7 @@ import Father from "../images/father.jpg";
 import Ramadan from "../images/idifatir.jpg";
 import Revise from "../images/revise.jpg";
 import Dress from "../images/dress.jpg";
+import FileSaver from "../FileSaver/FileSaver";
 
 const Calendar = () => {
   const Month = {
@@ -39,7 +40,7 @@ const Calendar = () => {
           </h1>
           <h3>Monday 9th MAY – Friday 29th JULY 2022 (13 WEEKS)</h3>
         </div>
-
+        <FileSaver />
         {/* MAY */}
 
         <Row style={{ marginTop: 25 }}>

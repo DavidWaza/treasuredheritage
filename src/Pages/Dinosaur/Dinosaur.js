@@ -22,15 +22,15 @@ const Dinosaur = () => {
             </p>
           </Col>
         </Row>
-        {DinosaurMap.map(({ id, src }) => {
-          return (
-            <Row>
-              <Col key={id} className="imgsrc">
-                {src}
-              </Col>
-            </Row>
-          );
-        })}
+        <Row>
+          {DinosaurMap.map(({ id, src }) => {
+            return (
+              <Col sm={4} key={id} className="imgDisplay">
+              <img src={src} alt='img' className="imgsrc" />
+            </Col>
+            );
+          })}
+        </Row>
       </Container>
     </div>
   );
