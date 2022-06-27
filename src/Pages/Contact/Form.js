@@ -2,7 +2,7 @@ import "./Form.css";
 
 export function Form() {
   return (
-    <form action="https://formspree.io/f/mwkyaqvr" method="POST">
+    <form action="https://formspree.io/f/mwkyaqvr" method="POST" autoComplete="off">
       <input placeholder="First name" name="Name" />
       <input placeholder="Last Name" name="Name" />
       <input placeholder="E-mail" name="Email" />

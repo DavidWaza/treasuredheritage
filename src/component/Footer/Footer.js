@@ -34,10 +34,6 @@ const Footer = () => {
           <Column>
             <img src={Events} alt="" style={{ height: 50, width: 50 }} />
             <Heading>Events</Heading>
-            {/* <FooterLink href="#">Mother's Day</FooterLink>
-            <FooterLink href="#">Teacher's Day</FooterLink>
-            <FooterLink href="#">WaterMelon Day</FooterLink>
-            <FooterLink href="#">Excursions</FooterLink> */}
             {EventsDay.map((event) => {
               return(
               <FooterLink href="#">{event}</FooterLink>
