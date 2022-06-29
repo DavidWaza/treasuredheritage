@@ -15,7 +15,7 @@ const NavBar = () => {
   const ActivityTeacher = { text: "Teacher's Day" };
   const ActivityLadyBugs = { text: "Lady Bugs Day" };
   const ActivityDinosaur = { text: "Dinosaur Day" };
-  const ActivityPenquine = { text: "Penquine Day" };
+  const ActivityPenquine = { text: "Penguin Day" };
   const ActivityPrize = { text: "Prize Day" };
 
   const styles = {
