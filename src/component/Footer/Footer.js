@@ -7,6 +7,7 @@ import Internet from "../../images/internet.png";
 import FaceBook from "../../images/fb.png";
 import Instagram from "../../images/insta.png";
 import Twitter from "../../images/twitter.png";
+import { Link } from "react-router-dom";
 import "./SubFooter.css";
 import {
   Box,
@@ -17,7 +18,6 @@ import {
   Heading,
 } from "./FooterStyles";
 
-
 const Footer = () => {
   return (
     <Box>
@@ -26,19 +26,34 @@ const Footer = () => {
           <Column>
             <img src={AboutUs} alt="" style={{ height: 50, width: 50 }} />
             <Heading>About Us</Heading>
-            <FooterLink href="/about/#mission">Mission</FooterLink>
-            <FooterLink href="/about/#mission">Vision</FooterLink>
-            <FooterLink href="*">Testimonials</FooterLink>
+            <FooterLink>
+              <Link to="/about/#mission">Mission</Link>
+            </FooterLink>
+            <FooterLink>
+              <Link to="/about/#vision">Vision</Link>
+            </FooterLink>
+            <FooterLink>
+              <Link to="*">Testimonials</Link>
+            </FooterLink>
           </Column>
           <Column>
             <img src={Events} alt="" style={{ height: 50, width: 50 }} />
             <Heading>Events</Heading>
-
-            <FooterLink href="/award">Prize day</FooterLink>
-            <FooterLink href="/dinosaur">Dinosaur day</FooterLink>
-            <FooterLink href="/ladybug">Lady Bugs day</FooterLink>
-            <FooterLink href="/penquine">Penguin day</FooterLink>
-            <FooterLink href="/teacher's day">Teachers day</FooterLink>
+            <FooterLink>
+              <Link to="/award">Prize day</Link>
+            </FooterLink>
+            <FooterLink>
+              <Link to="/dinosaur">Dinosaur day</Link>
+            </FooterLink>
+            <FooterLink>
+              <Link to="/ladybug">Lady Bugs day</Link>
+            </FooterLink>
+            <FooterLink>
+              <Link to="/penquine">Penguin day</Link>
+            </FooterLink>
+            <FooterLink>
+              <Link to="/teachers day">Teachers day</Link>
+            </FooterLink>
           </Column>
           <Column>
             <img src={Contact} alt="" style={{ height: 50, width: 50 }} />
