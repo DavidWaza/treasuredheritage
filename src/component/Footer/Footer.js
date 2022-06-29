@@ -17,13 +17,6 @@ import {
   Heading,
 } from "./FooterStyles";
 
-const EventsDay = [
-  "Prize day",
-  "Dinosaur day",
-  "Teachers day",
-  "Lady bug",
-  "Penguin day",
-];
 
 const Footer = () => {
   return (
