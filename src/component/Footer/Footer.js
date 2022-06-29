@@ -36,9 +36,9 @@ const Footer = () => {
 
             <FooterLink href="/award">Prize day</FooterLink>
             <FooterLink href="/dinosaur">Dinosaur day</FooterLink>
-            <FooterLink href="/lady">Lady Bugs day</FooterLink>
+            <FooterLink href="/ladybug">Lady Bugs day</FooterLink>
             <FooterLink href="/penquine">Penguin day</FooterLink>
-            <FooterLink href="/teachers">Teachers day</FooterLink>
+            <FooterLink href="/teacher's day">Teachers day</FooterLink>
           </Column>
           <Column>
             <img src={Contact} alt="" style={{ height: 50, width: 50 }} />
