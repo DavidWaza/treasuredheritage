@@ -36,7 +36,7 @@ const AboutPage = () => {
                 was established in the year 2014
               </p>
             </div>
-            <MissVis />
+            <MissVis id="mission" />
             <Container>
               <SubTitle title="SCHOOL STRUCTURE" />
               <Accordion>

@@ -17,7 +17,13 @@ import {
   Heading,
 } from "./FooterStyles";
 
-const EventsDay =  ["watermelon day", "parents day", "teachers day", 'lady bug', 'penguin day'] 
+const EventsDay = [
+  "Prize day",
+  "Dinosaur day",
+  "Teachers day",
+  "Lady bug",
+  "Penguin day",
+];
 
 const Footer = () => {
   return (
@@ -27,17 +33,19 @@ const Footer = () => {
           <Column>
             <img src={AboutUs} alt="" style={{ height: 50, width: 50 }} />
             <Heading>About Us</Heading>
-            <FooterLink href="#">Mission</FooterLink>
-            <FooterLink href="#">Vision</FooterLink>
-            <FooterLink href="#">Testimonials</FooterLink>
+            <FooterLink href="/about/#mission">Mission</FooterLink>
+            <FooterLink href="/about/#mission">Vision</FooterLink>
+            <FooterLink href="*">Testimonials</FooterLink>
           </Column>
           <Column>
             <img src={Events} alt="" style={{ height: 50, width: 50 }} />
             <Heading>Events</Heading>
-            {EventsDay.map((event) => {
-              return(
-              <FooterLink href="#">{event}</FooterLink>
-            )})}
+
+            <FooterLink href="/award">Prize day</FooterLink>
+            <FooterLink href="/dinosaur">Dinosaur day</FooterLink>
+            <FooterLink href="/lady">Lady Bugs day</FooterLink>
+            <FooterLink href="/penquine">Penquine day</FooterLink>
+            <FooterLink href="/teachers">Teachers day</FooterLink>
           </Column>
           <Column>
             <img src={Contact} alt="" style={{ height: 50, width: 50 }} />
@@ -56,8 +64,8 @@ const Footer = () => {
               </FooterLink>
             </div>
           </Column>
-          <Column >
-		  <img src={Internet} alt="" style={{ height: 50, width: 50 }} />
+          <Column>
+            <img src={Internet} alt="" style={{ height: 50, width: 50 }} />
             <Heading>Social Media</Heading>
             <div style={{ display: "flex" }}>
               <FooterLink href="https://web.facebook.com/people/Treasured-Heritage-School-Christian-Montessori/100063690275152/">
